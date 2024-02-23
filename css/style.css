@@ -257,7 +257,7 @@ a.text-primary {
   position: absolute;
   right: 15px;
   margin-top: -2px; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 768px) {
     .btn-book {
       right: 60px; } }
 
