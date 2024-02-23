@@ -937,7 +937,7 @@ background: #000; }
   right: -100%;
   top: -40px;
   z-index: -1;
-  background: rgba(19, 106, 213, 0.945); }
+  ); }
 
 .bg-2:before {
   content: "";
