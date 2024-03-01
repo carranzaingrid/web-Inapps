@@ -8,6 +8,8 @@
 * Facebook: https://web.facebook.com/Untree.co/
 * Pinterest: https://pinterest.com/Untree_co/
 */
+
+
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.4;
@@ -15,7 +17,7 @@ body {
   overflow-x: hidden;
   font-size: 18px;
   color: #ffffff;
-  min-height: 100vh;
+  
 }
   body:before {
     content: "";
@@ -35,7 +37,7 @@ body {
   body.offcanvas-menu:before {
     opacity: 1;
     visibility: visible; 
-    min-height: 100vh;}
+ ;}
 
 .text-black {
   color: #000000 !important; }
@@ -446,10 +448,10 @@ a.text-primary {
       transform: rotate(-45deg); }
 
 .site-mobile-menu {
-  width: 300px;
+  width: 260px;
   position: fixed;
   right: 0;
-  z-index: 2000;
+  z-index: 1000;
   padding-top: 20px;
   background: #101010f8;
   min-height: 100vh;
@@ -460,20 +462,17 @@ a.text-primary {
   -o-transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1);
   transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1); }
   .offcanvas-menu .site-mobile-menu {
-    -webkit-box-shadow: -10px 0 20px -10px rgba(249, 247, 247, 0.506);
-    box-shadow: -10px 0 20px -10px rgba(121, 158, 245, 0.661);
-    -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    transform: translateX(0%); }
+   transform: translateX(0%); }
   .site-mobile-menu .site-mobile-menu-header {
     width: 100%;
-    float: right;
+    float: left;
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px; 
+  }
     .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
       float: right;
       margin-top: 8px; 
-      
+     
     }
       .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
         font-size: 30px;
@@ -498,10 +497,9 @@ a.text-primary {
           text-decoration: none; }
   .site-mobile-menu .site-mobile-menu-body {
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
     position: relative;
     padding: 0 20px 20px 20px;
-    height: calc(100vh - 52px);
+    height: calc(100vh);
     padding-bottom: 150px; }
   .site-mobile-menu .site-nav-wrap {
     padding: 0;
@@ -782,7 +780,9 @@ a.text-primary {
 .untree_co-section {
   padding: 45px 0;
   position: relative;
-background: #000; }
+background: #000; 
+initial-letter-align: 20px;
+}
   @media (max-width: 780px) {
     .untree_co-section {
       padding: 40px 0; 
@@ -932,22 +932,15 @@ background: #000; }
 .bg-1:before {
   content: "";
   position: absolute;
-  width: 150%;
+  width: 160%;
   height: 70%;
   right: -100%;
   top: -40px;
   z-index: -1;
-  ); }
+  
+  }
 
-.bg-2:before {
-  content: "";
-  position: absolute;
-  height: 40%;
-  width: 70%;
-  left: -50%;
-  top: 0px;
-  z-index: -1;
-  background: rgba(236, 102, 31, 0.1); }
+
 
 @media (max-width: 991.98px) {
   .bg-2 {
@@ -1123,7 +1116,8 @@ background: #000; }
       font-size: 30px; }
 
 .staff {
-  padding: 20px; }
+  padding: 20px; text-align: justify;
+ }
   .staff img {
     border-radius: 40px;
     width: 200px; }
@@ -1285,6 +1279,12 @@ background: #000; }
     .category:hover span {
       color: rgba(242, 242, 246, 0.926); }
 
+.services-section[id]{
+  scroll-margin-top: 70px;
+  scroll-behavior: smooth;
+
+}
+
 .section-title .heading {
   font-size: 30px;
   font-weight: 700; }
@@ -1294,7 +1294,9 @@ background: #000; }
 
 .services-section {
   background: #000;
-  padding: 50px 0; }
+  padding: 50px 0; 
+  
+}
 
 .img-wrap-2 {
   margin-top: -120px;
